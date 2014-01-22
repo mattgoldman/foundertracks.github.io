@@ -8,10 +8,15 @@
 }
 
 $helvetica: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$league: 'league-gothic', $helvetica;
 $pictos: 'Pictos';
-$bg: #FFF;
+$bg: #252B35;
 $text: #333;
 $bold_text: #222;
+$purple: #9D7FD8;
+$red: #F75A4D;
+$gold: #EFC45F;
+$blue: #7DBCE8;
 
 body {
   background-color: $bg;
@@ -40,78 +45,3 @@ a {
   &:visited {color: $text}
 }
 /* END TYPOGRAPHY */
-
-/* BEGIN HEADER BAR */
-#header_bar_banner {
-  background-color: rgba(255,255,255,0.95);
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-}
-#header_bar {
-  height: 50px;
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {height: 100px}
-
-  #logo {
-    float: left;
-    width: 300px;
-    height: 24px;
-    padding: 12px 0px 14px;
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  nav {
-    float: right;
-
-    a {
-      color: #bcc3cc;
-      font-size: 15px;
-      line-height: 24px;
-      padding: 13px 0px;
-      display: inline-block;
-      margin-left: 28px;
-      transition: color .2s;
-
-      &#trial_button {
-        color: #84c1b1;
-        font-weight: bold;
-      }
-
-      &:hover {
-        color: #5799d6 !important;
-        text-decoration: none;
-      }
-
-      /* All Mobile Sizes (devices and browser) */
-      @media only screen and (max-width: 767px) {
-        margin-left: 15px;
-        font-size: 14px;
-      }
-
-      &:first-child {
-        /* All Mobile Sizes (devices and browser) */
-        @media only screen and (max-width: 767px) {
-          margin-left: 0px;
-        }
-      }
-    }
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-      clear: both;
-      text-align: center;
-      width: 100%;
-    }
-  }
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {height: 100px}
-}
-/* END HEADER BAR */

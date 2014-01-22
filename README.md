@@ -1,7 +1,3 @@
-# Fork this project, then...
-
-Search for TODO's and replace them.
-
 ## First time pulling down
 
 ```bash
